@@ -12,7 +12,7 @@ Use [.NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/).
 Scaffold and run App:
 
 ```bash
-dotnet new mvc -n mvc-app -f net6.0
+dotnet new mvc -n mvc-app -f net9.0
 dotnet run
 ```
 
@@ -68,7 +68,7 @@ dotnet publish /p:Configuration=Release /p:PublishProfile=Properties\PublishProf
 ## Deploy net-api using az webapp up
 
 ```bash
-az webapp up -n $app -g $grp -p $plan --sku F1 -l $loc --runtime "dotnet:8"
+az webapp up -n $app -g $grp -p $plan --sku F1 -l $loc --runtime "dotnet:9"
 ```
 
 ![az-webapp-up](_images/az-webapp-up.png)
